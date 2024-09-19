@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Information</title>
+  <style>
+    body {
+    background: url(https://www.bing.com/images/search?view=detailV2&ccid=Qz%2b%2fFvgc&id=4179A75916BD2D297C8AE048B93E383689ADF5D2&thid=OIP.Qz-_FvgcRkZDR62fKJaSrwHaE8&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.433fbf16f81c46464347ad9f289692af%3frik%3d0vWtiTY4PrlI4A%26riu%3dhttp%253a%252f%252fwallpapercave.com%252fwp%252f8tXOOTr.jpg%26ehk%3dbKMa1TwRe%252bjeQt7GL5mWg7o3gYn06qfXVlDK0Z8lUnE%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1800&q=pistagreen++nature+pictures&simid=608017329590850095&FORM=IRPRST&ck=A3C8258FBF0AC1059C2D059C27B10C45&selectedIndex=177&itb=0);
+      background-color: #f2f6f0; 
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #d0e1d4; 
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #4a773c; 
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+    label {
+      font-weight: bold;
+      color: #4a773c; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #b0c4a2; 
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 5px 0;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #4a773c; 
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #3a5a2e; 
+    }
+    .center {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 90%; 
+        padding: 10px;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%; 
+        margin: 5px 0;
+      }
+    }
+    @media (max-width: 480px) {
+      table {
+        display: block; 
+      }
+      td {
+        display: block;
+        width: 100%;
+      }
+      label {
+        margin-top: 10px; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Information</h1>
+    <hr>
+    <form>
+      <table>
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td><input type="text" id="firstName" name="firstName"></td>
+        </tr>
+        <tr>
+          <td><label for="lastName">Last Name:</label></td>
+          <td><input type="text" id="lastName" name="lastName"></td>
+        </tr>
+        <tr>
+          <td><label for="nickName">Nick Name:</label></td>
+          <td><input type="text" id="nickName" name="nickName"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" name="dob"></td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="mobile">Mobile No:</label></td>
+          <td><input type="text" id="mobile" name="mobile"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><textarea id="address" name="address" cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr></table>
+        <div class="register-link">
+          <p>Already have an account? <a href="index.html">Login form</a></p>
+        </div>
+      
+    </form>
+  </div>
+</body>
+</html>
